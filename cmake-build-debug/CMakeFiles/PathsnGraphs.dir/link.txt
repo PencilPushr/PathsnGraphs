@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/PathsnGraphs.dir/main.cpp.o CMakeFiles/PathsnGraphs.dir/weightedPath.cpp.o CMakeFiles/PathsnGraphs.dir/locationNode.cpp.o -o PathsnGraphs 

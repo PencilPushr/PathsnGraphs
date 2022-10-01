@@ -12,6 +12,7 @@
 #include <string>
 
 using std::vector;
+using std::string;
 //two classes that refer to each other require forward declarations
 class weightedPath;
 
@@ -22,7 +23,7 @@ private:
 
 public:
     //constructor
-    locationNode(string &n);
+    locationNode(string n);
 
     //utility functions
     void addLink(locationNode *destination, float pathWeight);

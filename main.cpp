@@ -100,12 +100,41 @@ int main() {
   std::cout << "Hello World! - Hal9000\n";
 
   unordered_map<string, locationNode *> uMap;
-  uMap["London Canary Wharf"] = new locationNode("London Canary Wharf");
-  uMap["San Fransico"] = new locationNode("San Fransico");
-  uMap["Zurich"] = new locationNode("Zurich");
 
-  // How far from London to Zurich, and vice versa?
-  uMap["London Canary Wharf"]->linkNode(uMap["Zurich"], 777.0, 777.0);
+    uMap["London Canary Wharf"] = new locationNode("London Canary Wharf");
+    uMap["San Fransisco"] = new locationNode("San Fransisco");
+    uMap["Zurich"] = new locationNode("Zurich");
+    uMap["Rome"] = new locationNode("Rome");
+    uMap["Perth"] = new locationNode("Perth");
+    uMap["Manchester"] = new locationNode("Manchester");
+    uMap["Byzantium"] = new locationNode("Byzantium");
+    uMap["Cape Town"] = new locationNode("Cape Town");
+    uMap["New York"] = new locationNode("New York");
+    uMap["Beijing"] = new locationNode("Beijing");
+    uMap["Ontario"] = new locationNode("Ontario");
+    uMap["Juba City"] = new locationNode("Juba City");
+    uMap["Abuja"] = new locationNode("Abuja");
+    uMap["Sydney"] = new locationNode("Sydney");
+
+
+    // How far from London to Zurich, and vice versa?
+      uMap["London Canary Wharf"]->linkNode(uMap["Zurich"], 777.0, 777.0);
+      uMap["Zurich"]->linkNode(uMap["Manchester"], 1336.5, 1336.5);
+      uMap["Zurich"]->linkNode(uMap["Perth"], 13789.0, 13789.0);
+      uMap["Perth"]->linkNode(uMap["Rome"], 13331.0, 13331.0);
+      uMap["Rome"]->linkNode(uMap["San Fransisco"], 10041.0, 10041.0);
+      uMap["San Fransisco"]->linkNode(uMap["Byzantium"], 10778.0, 10778.0);
+      uMap["Byzantium"]->linkNode(uMap["Beijing"], 7051.0, 7051.0);
+      uMap["Beijing"]->linkNode(uMap["Cape Town"], 12948.0, 12948.0);
+      uMap["Perth"]->linkNode(uMap["Ontario"], 17249.0, 17249.0);
+      uMap["Ontario"]->linkNode(uMap["Juba City"], 11388.0, 11388.0);
+      uMap["Ontario"]->linkNode(uMap["New York"], 1458.0, 13789.0);
+      uMap["New York"]->linkNode(uMap["Abuja"], 70.0, 70.0);
+      uMap["Abuja"]->linkNode(uMap["Sydney"], 15397.0, 15397.0);
+      uMap["Juba City"]->linkNode(uMap["London Canary Wharf"], 9469.0, 9469.0);
+
+    //see about making a network of nodes to test the path finding algorithm
+    shortestPathSetup(&uMap, "London Canary Wharf", "Beijing");
 
     //see about making a network of nodes to test the path finding algorithm
 }

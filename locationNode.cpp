@@ -5,13 +5,13 @@
 
 using std::string;
 
-locationNode::locationNode(string &n) {
+locationNode::locationNode(string n) {
     this->name = n;
 }
 
 void locationNode::addLink(locationNode *destination, float pathWeight) {
-    weightedPath route = new weightedPath(pathWeight, destination);
-        this->paths.push_back(route);
+    weightedPath route = weightedPath(pathWeight, destination);
+    this->paths.push_back(route);
 }
 
 void locationNode::linkNode(locationNode *destination, float pathWeight, float backWeight) {
