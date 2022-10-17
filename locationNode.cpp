@@ -1,6 +1,3 @@
-//
-// Created by averagejoe on 9/24/22.
-//
 #include "locationNode.h"
 
 using std::string;

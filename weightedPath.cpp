@@ -1,7 +1,3 @@
-//
-// Created by averagejoe on 9/24/22.
-//
-
 #include "weightedPath.h"
 
 weightedPath::weightedPath(float w, locationNode *f) {

@@ -1,7 +1,3 @@
-//
-// Created by averagejoe on 9/24/22.
-//
-
 #ifndef PATHSNGRAPHS_LOCATIONNODE_H
 #define PATHSNGRAPHS_LOCATIONNODE_H
 
